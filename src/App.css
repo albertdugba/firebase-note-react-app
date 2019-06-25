@@ -1,0 +1,201 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  color: #fff;
+  align-items: center;
+}
+
+.navbar > :first-child {
+  font-size: 2rem;
+}
+
+.nav-links:last-child {
+  margin: 10px;
+  padding: 1rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Welcome Component */
+.centered {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Home Component */
+.showcase {
+  background: rgba(4, 85, 85, 0.4);
+  padding: 2rem;
+  position: fixed;
+  margin-top: 19px;
+  height: 100vh;
+  min-width: 100vw;
+  margin: auto;
+}
+
+.showcase h1 {
+  /* text-align: center; */
+  font-size: 3.4rem;
+  color: teal;
+}
+
+.showcase-grid {
+  width: 50%;
+  text-align: center;
+  line-break: 1.6;
+  font-size: 1.2rem;
+}
+
+.showcase-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+}
+
+.btn-links {
+  display: inline-block;
+  padding: 1.2rem;
+  background: teal;
+  margin: 19px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.btn-link:hover {
+  background: teal;
+  color: #fff;
+  transition: 0.5s ease-out;
+}
+
+.btn-line {
+  display: flex;
+  padding: 1rem;
+  margin: auto;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.submit {
+  margin-top: 20px;
+  width: 20%;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 9px;
+  outline: none;
+  border: none;
+  border: 1.125px solid teal;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: teal;
+}
+
+.submit:hover {
+  background: teal;
+  color: #fff;
+  transition: all ease-in-out;
+}
+
+/* Form */
+
+.form-group {
+  margin-top: 170px;
+}
+
+.form-group h1 {
+  text-align: center;
+  color: lightseagreen;
+}
+
+form {
+  max-width: 800px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: teal;
+}
+
+form input {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  border: 1.2px solid teal;
+  border-radius: 2px;
+  font-size: 1.125rem;
+}
+
+button {
+  border-radius: 1.2px;
+}
+
+.form-error {
+  margin-top: 20px;
+  color: red;
+}
+
+/* Notes Page */
+.notes-page {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 2rem;
+  color: teal;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.notes-page input {
+  width: 340px;
+  border-radius: 3px;
+  border: none;
+  border: 1.2px solid teal;
+  outline: none;
+  font-size: 1rem;
+  padding: 14.2px;
+}
+
+.notes-page button {
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  border: 1.2px solid teal;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: -30px;
+  margin-left: -10px;
+  width: 80px;
+}
+
+.notes-page button:hover {
+  background: teal;
+  color: #fff;
+}
+.add-note {
+  padding: 1rem;
+  width: 130px;
+  margin: 12px;
+}
+
+.add {
+  align-items: center;
+  margin-top: 4px;
+}
