@@ -8,9 +8,11 @@ class Navbar extends Component {
     return (
       <div className="main-header">
         <div className="brand">
-          <i className="fas fa-clipboard " />
-          {""}
-          Note app
+          <Link to="/">
+            <i className="fas fa-clipboard " />
+            {""}
+            Note app
+          </Link>
         </div>
         <div className="nav-items">
           {userName && <Link to="/notes">ALl Notes</Link>}

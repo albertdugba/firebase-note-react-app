@@ -8,7 +8,9 @@ class Home extends Component {
       <div className="home-container">
         <div>
           {" "}
-          <h1>Note Taking Application</h1>
+          <h1>
+            <i className="fas fa-pen" /> Note Taking Application
+          </h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry standard dummy text ever
