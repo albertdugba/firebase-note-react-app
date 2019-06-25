@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import "../App.css";
 
 class Welcome extends Component {
   render() {
-    const { user } = this.props;
+    const { userName } = this.props;
     return (
-      <div className="centered">
-        Welcome <strong>{user}</strong>
+      <div className="text-center container">
+        <span>
+          Welcome <strong>{userName}</strong>
+        </span>
       </div>
     );
   }
