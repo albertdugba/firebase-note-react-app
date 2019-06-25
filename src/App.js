@@ -48,6 +48,10 @@ class App extends Component {
     });
   };
 
+  addNotes = noteName => {
+    console.log(noteName);
+  };
+
   render() {
     return (
       <div>
@@ -58,7 +62,7 @@ class App extends Component {
         <Router>
           <Home path="/" />
           <RegisterUser path="/register" registerUser={this.registerUser} />
-          <Notes path="/notes" />
+          <Notes path="/notes" addNotes={this.addNotes} />
         </Router>
       </div>
     );

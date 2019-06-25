@@ -75,7 +75,8 @@ form {
   max-width: 750px;
   margin: auto;
   margin-top: 40px;
-  /* padding: 0.4rem; */
+  box-shadow: 0 0 20px #000;
+  padding: 1rem;
 }
 
 .form-title {
@@ -118,5 +119,21 @@ button {
 /* Notes */
 
 .all-notes {
-  margin-top: 100px;
+  margin-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: purple;
+  text-transform: uppercase;
+}
+
+.add-form {
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+
+.add-form input {
+  border-radius: 10px;
+  border: 2px solid purple;
+  padding: 0.6rem;
 }

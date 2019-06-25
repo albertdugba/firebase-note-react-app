@@ -14,7 +14,7 @@ class RegisterUser extends Component {
   };
 
   onTimeout = () => {
-    this.setState({ open: false });
+    this.setState({ errorTime: false });
   };
 
   onChange = event => {
