@@ -4,7 +4,7 @@ import "../App.css";
 
 class Navbar extends Component {
   render() {
-    const { userName } = this.props;
+    const { userName, logOutUser } = this.props;
     return (
       <div className="main-header">
         <div className="brand">
@@ -16,7 +16,11 @@ class Navbar extends Component {
         </div>
         <div className="nav-items">
           {userName && <Link to="/notes">ALl Notes</Link>}
-          {userName && <Link to="/login">Logout</Link>}
+          {userName && (
+            <Link to="/login" onClick={event => logOutUser(event)}>
+              Logout
+            </Link>
+          )}
           {!userName && <Link to="/register">Register</Link>}
         </div>
       </div>
