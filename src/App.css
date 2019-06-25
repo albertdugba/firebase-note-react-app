@@ -60,8 +60,56 @@ body {
   border: none;
   border: 1px solid purple;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: bold;
 }
 
 .fa-pen {
   color: purple;
+}
+
+/* Form  */
+
+form {
+  max-width: 750px;
+  margin: auto;
+  margin-top: 40px;
+  /* padding: 0.4rem; */
+}
+
+.form-title {
+  margin-top: 70px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 5px;
+  color: purple;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border: 1.2px solid purple;
+  text-align: 20px;
+  padding-left: 5px;
+}
+
+button {
+  margin-top: 10px;
+  height: 2.4rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1.2px solid purple;
+  background: purple;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0.1rem;
 }

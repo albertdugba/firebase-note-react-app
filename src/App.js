@@ -5,6 +5,7 @@ import firebase from "./components/Firebase";
 import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
 import Home from "./components/Home";
+import RegisterUser from "./components/RegisterUser";
 
 class App extends Component {
   state = {
@@ -26,8 +27,10 @@ class App extends Component {
           <Navbar userName={this.state.user} />
           {this.state.user && <Welcome userName={this.state.user} />}
         </div>
-
-        <Home path="/" />
+        <Router>
+          <Home path="/" />
+          <RegisterUser path="/register" />
+        </Router>
       </div>
     );
   }
