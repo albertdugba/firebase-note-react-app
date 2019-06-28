@@ -9,7 +9,7 @@ class Home extends Component {
         <div>
           {" "}
           <h1>
-            <i className="fas fa-pen" /> Note Taking Application
+            <i className="fas fa-pen" /> Note Taking Application!
           </h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
