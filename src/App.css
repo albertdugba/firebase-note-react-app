@@ -116,7 +116,7 @@ button {
   padding-bottom: 0.1rem;
 }
 
-/* Notes */
+/* Login Form // Notes */
 
 .all-notes {
   margin-top: 50px;
@@ -129,11 +129,17 @@ button {
 .add-form {
   font-size: 1rem;
   /* border-radius: 20px; */
-  margin-top: 12px;
+  margin-top: 17px;
 }
 
 .add-form input {
   /* border-radius: 10px; */
   border: 1.8px solid purple;
   padding: 0.6rem;
+}
+
+/* Output */
+.output {
+  text-align: center;
+  margin-top: 40px;
 }

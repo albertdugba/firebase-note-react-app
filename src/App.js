@@ -7,6 +7,7 @@ import Welcome from "./components/Welcome";
 import Home from "./components/Home";
 import RegisterUser from "./components/RegisterUser";
 import Notes from "./components/Notes";
+import Login from "./components/Login";
 
 class App extends Component {
   state = {
@@ -14,14 +15,6 @@ class App extends Component {
     userID: null,
     displayName: null
   };
-
-  // componentDidMount() {
-  //   const ref = firebase.database().ref("user");
-  //   ref.on("value", snapshot => {
-  //     let firebaseUser = snapshot.val();
-  //     this.setState({ user: firebaseUser });
-  //   });
-  // }
 
   componentDidMount() {
     firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -31,10 +24,34 @@ class App extends Component {
           userID: firebaseUser.uid,
           displayName: firebaseUser.displayName
         });
+        // Create a reference to which the items are going to be stored under
+        const notesRef = firebase
+          .database()
+          .ref(`notes/${this.state.firebaseUser.uid}`);
+        // Get the value of the data
+        notesRef.on("value", snapshot => {
+          let notes = snapshot.val();
+          // Set an empty array to which the notes are going to be stored
+          let notesList = [];
+          // Loop through and add to the array
+          for (let item in notes) {
+            notesList.push({
+              noteID: item,
+              notesName: notes[item].noteName
+            });
+          }
+          // Update the state
+          this.setState({
+            notes: notesList,
+            howManyNotes: notesList.length
+          });
+        });
+      } else {
+        this.setState({ displayName: null });
       }
     });
   }
-
+  // Register user with the display name
   registerUser = userName => {
     firebase.auth().onAuthStateChanged(firebaseUser => {
       firebaseUser
@@ -52,10 +69,13 @@ class App extends Component {
     });
   };
 
+  // Form for adding note
   addNotes = noteName => {
-    console.log(noteName);
+    const ref = firebase.database().ref(`/notes/${this.state.user.uid}`);
+    ref.push({ noteName: noteName });
   };
 
+  // Method for logging out users
   logOutUser = event => {
     event.preventDefault();
     this.setState({
@@ -82,7 +102,12 @@ class App extends Component {
         <Router>
           <Home path="/" />
           <RegisterUser path="/register" registerUser={this.registerUser} />
-          <Notes path="/notes" addNotes={this.addNotes} />
+          <Notes
+            path="/notes"
+            notes={this.state.notes}
+            addNotes={this.addNotes}
+          />
+          <Login path="/login" />
         </Router>
       </div>
     );
