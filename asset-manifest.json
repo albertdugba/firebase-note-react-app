@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/firebase-note-react-app/static/css/main.f69937c9.chunk.css",
+    "main.js": "/firebase-note-react-app/static/js/main.29787d9c.chunk.js",
+    "main.js.map": "/firebase-note-react-app/static/js/main.29787d9c.chunk.js.map",
+    "runtime~main.js": "/firebase-note-react-app/static/js/runtime~main.630e5dd8.js",
+    "runtime~main.js.map": "/firebase-note-react-app/static/js/runtime~main.630e5dd8.js.map",
+    "static/css/2.0624914a.chunk.css": "/firebase-note-react-app/static/css/2.0624914a.chunk.css",
+    "static/js/2.5bc654be.chunk.js": "/firebase-note-react-app/static/js/2.5bc654be.chunk.js",
+    "static/js/2.5bc654be.chunk.js.map": "/firebase-note-react-app/static/js/2.5bc654be.chunk.js.map",
+    "index.html": "/firebase-note-react-app/index.html",
+    "precache-manifest.dba81f0969e7810d74d62241cacd64a8.js": "/firebase-note-react-app/precache-manifest.dba81f0969e7810d74d62241cacd64a8.js",
+    "service-worker.js": "/firebase-note-react-app/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/firebase-note-react-app/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.f69937c9.chunk.css.map": "/firebase-note-react-app/static/css/main.f69937c9.chunk.css.map"
+  }
+}
