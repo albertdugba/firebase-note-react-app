@@ -143,3 +143,47 @@ button {
   text-align: center;
   margin-top: 40px;
 }
+
+/* Media Queries */
+/* Medium Screen Size */
+@media (max-width: 769px) {
+  .home-container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .add-form {
+    max-width: 550px;
+    margin: auto;
+  }
+
+  /* Register Form */
+  form {
+    max-width: 410px;
+    margin: auto;
+  }
+
+  .form-title {
+    margin-top: 40px;
+  }
+}
+
+/* Small Screen Size */
+@media (max-width: 500px) {
+  .home-container {
+    max-width: 388px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .add-form {
+    max-width: 388px;
+    margin: auto;
+  }
+
+  form {
+    max-width: 335px;
+    margin: auto;
+  }
+}

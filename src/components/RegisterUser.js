@@ -10,6 +10,7 @@ class RegisterUser extends Component {
     passwordOne: "",
     passwordTwo: "",
     errorMsg: null,
+    loading: false,
     errorTime: true
   };
 
@@ -25,7 +26,8 @@ class RegisterUser extends Component {
 
   onSubmit = event => {
     event.preventDefault();
-    // console.log(event);
+    //  Set state to loading...
+    this.setState({ loading: true });
     if (this.state.passwordOne !== this.state.passwordTwo) {
       this.setState({ errorMsg: "Passwords do not match" });
     }
@@ -44,6 +46,9 @@ class RegisterUser extends Component {
       )
       .then(() => {
         this.props.registerUser(this.state.displayName);
+      })
+      .then(() => {
+        this.setState({ loading: false });
       })
       .catch(error => {
         if (error.message != null) {
@@ -103,7 +108,7 @@ class RegisterUser extends Component {
             onChange={this.onChange}
             placeholder="Confirm Password"
           />
-          <button>Register</button>
+          <button>{this.state.loading ? "Registering..." : "Register"}</button>
         </form>
       </div>
     );
