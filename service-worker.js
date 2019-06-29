@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/firebase-note-react-app/precache-manifest.bd6c53ceacdb80ffc763c653f14136c9.js"
+  "/firebase-note-react-app/precache-manifest.af69f1de229edc7bb931dff722d5c5d2.js"
 );
 
 self.addEventListener('message', (event) => {
