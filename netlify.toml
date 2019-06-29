@@ -1,0 +1,4 @@
+[build]
+base = "react-firebase-todo/"
+publish = "react-firebase-todo/build/"
+command = "yarn build"

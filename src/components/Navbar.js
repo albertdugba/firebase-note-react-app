@@ -21,6 +21,7 @@ class Navbar extends Component {
               Logout
             </Link>
           )}
+          {!userName && <Link to="/">Home</Link>}
           {!userName && <Link to="/register">Register</Link>}
         </div>
       </div>

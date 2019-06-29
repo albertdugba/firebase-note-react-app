@@ -43,7 +43,6 @@ body {
 }
 
 /* Home */
-
 .home-container {
   margin: auto;
   max-width: 900px;
@@ -69,8 +68,11 @@ body {
   color: purple;
 }
 
-/* Form  */
+.space {
+  margin: 1rem;
+}
 
+/* Form  */
 form {
   max-width: 750px;
   margin: auto;

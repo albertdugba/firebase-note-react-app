@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
+import "../App.css";
 
 class Home extends Component {
   render() {
@@ -26,6 +27,11 @@ class Home extends Component {
         {!userName && (
           <Link to="/register" className="btn-link">
             Register
+          </Link>
+        )}
+        {!userName && (
+          <Link to="/login" className="btn-link space">
+            Log In
           </Link>
         )}
       </div>
